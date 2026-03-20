@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect } from "react"; 
+import { useState, useMemo, useEffect } from "react";  
 
 const STAGES = ["Sourced","Outreach Sent","Follow-Up Sent","Responded","Phone Screen","Submitted","HM Screen","Interviewing","Offer","Hired","Not Interested","Pass","Final Stage - Not Hired"];
 const PARK_REASONS = ["Just Started New Role","Not Open Yet","Comp Mismatch - Revisit","Strong Profile - Wrong Timing","Passive - Check Back","Other"];
