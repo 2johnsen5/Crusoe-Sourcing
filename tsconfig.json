@@ -1,0 +1,31 @@
+The error is **"vite: command not found"** — Vercel isn't installing the packages first. We need to add one more file to GitHub to fix this.
+
+Go to your **Crusoe-Sourcing** repo on GitHub, click **Add file** → **Create new file** and:
+
+**Filename:** `tsconfig.json`
+
+```json
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
+```
+
+Commit that, then tell me when done and I'll give you one more file.
