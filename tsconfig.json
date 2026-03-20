@@ -26,6 +26,3 @@ Go to your **Crusoe-Sourcing** repo on GitHub, click **Add file** → **Create n
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
-```
-
-Commit that, then tell me when done and I'll give you one more file.
